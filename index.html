@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manga list</title>
+    <title>Manga List</title>
     <style>
-        nav {
+        body {
             text-align: center;
-            margin: 20px 0;
         }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
+        .manga-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .manga {
+            margin: 10px;
+        }
+        .manga img {
+            max-width: 200px;
+            height: auto;
         }
     </style>    
 </head>
 <body>
-    <h1>Father I Don't Want This Marriage </h1>
-    <img src="FIDWTM/cover.jpg" alt="cover">
-    <!-- Navigation -->
-    <nav>
-        <a href="FIDWTM/chapter1.html">Chapter 1</a>
-        <a href="FIDWTM/chapter2.html">Chapter 2</a>
-        <a href="FIDWTM/chapter3.html">Chapter 3</a>
-        <a href="FIDWTM/chapter4.html">Chapter 4</a>
-        <a href="FIDWTM/chapter5.html">Chapter 5</a>
-        <a href="FIDWTM/chapter6.html">Chapter 6</a>
-        <a href="FIDWTM/chapter7.html">Chapter 7</a>
-        <a href="FIDWTM/chapter8.html">Chapter 8</a>
-        <a href="FIDWTM/chapter9.html">Chapter 9</a>
-        <a href="FIDWTM/chapter10.html">Chapter 10</a>
-        <!-- Add more links for additional chapters -->
-    </nav>
+    <h1>Manga List</h1>
+
+    <div class="manga-container">
+        <!-- Manga 1 -->
+        <div class="manga">
+            <a href="manga1/index.html">
+                <img src="manga1/cover.jpg" alt="Manga 1 Cover">
+                <h2>Father I Don't Want This Marriage </h2>
+            </a>
+        </div>
+
+        <!-- Manga 2 -->
+        <div class="manga">
+            <a href="manga2/index.html">
+                <img src="manga2/cover.jpg" alt="Manga 2 Cover">
+                <h2>Manga 2</h2>
+            </a>
+        </div>
+
+        <!-- Add more divs for additional mangas -->
+    </div>
 
 </body>
 </html>
