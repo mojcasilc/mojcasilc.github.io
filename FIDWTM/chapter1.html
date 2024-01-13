@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Father I Don't Want This Marriage Chapter 1</title>
     <style>
+        body {
+            text-align: center;
+            margin: 0;
+            background-color: lightgray; /* Original background color */
+            color: black; /* Set text color to contrast with the background */
+        }
         img {
             max-width: 540px; /* Limit the maximum width to 540 pixels */
             height: auto; /* Maintain the aspect ratio */
@@ -18,8 +24,21 @@
         }
         nav a {
             margin: 0 10px;
-            text-decoration: none;
+            text-decoration: none; /* Use !important to ensure specificity */;
             color: #333;
+        }
+        /* Center the "Back to Cover Page" and "Back to Manga List" links */
+        body > p {
+            text-align: center;
+        }
+        /* Make links bigger and bolder */
+        a,
+        p a {
+            font-size: 18px; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the text bold */
+            text-decoration: none;
+            color: black; /* Set the text color for chapter links */
+
         }
     </style>    
 </head>
@@ -34,7 +53,9 @@
 
     <!-- Navigation back to the main page -->
     <p>
-        Next: <a href="chapter2.html">Chapter 2</a>
+        <h3>
+        <a href="chapter2.html">Chapter 2</a>
+        </h3>
     </p>
     <p><a href="FIDWTM_index.html">Back to Cover Page</a></p>
     <p><a href="../index.html">Back to Manga List</a></p>
