@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manga List</title>
     <style>
-        body {
+        body{
             text-align: center;
+            margin: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: black; /* Set text color to contrast with the background */
+
         }
         .manga-container {
             display: flex;
@@ -19,6 +25,9 @@
         .manga img {
             max-width: 200px;
             height: auto;
+        }
+        .manga h2 {
+            text-decoration: none; /* Remove underlining for manga names */
         }
     </style>    
 </head>
